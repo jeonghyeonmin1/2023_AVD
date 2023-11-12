@@ -1,0 +1,50 @@
+#super-div{
+    width: 400px;
+    height: 700px;
+    text-align: center;
+    color: black;
+    background-color: #FFFFFF;
+    border:1px solid black;
+    border-radius: 20px 20px / 20px 20px
+  }
+
+#top-div{
+    padding-top: 10px;
+    padding-right: 250px;
+    padding-left: 10px;
+    font-size: 15px;
+    color: #A9F09D;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  
+#bottom-div{
+    font-weight: 900;
+    font-size: 30px;
+
+}
+
+#middle-div{
+    font-weight: bold;
+}
+
+#bottom-div{
+    text-align: center;
+}
+
+.buttons{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #A9F09D;
+    border: black 1px solid;
+    border-radius: 20px;
+}
+  
+.button-flex{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
