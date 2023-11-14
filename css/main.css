@@ -12,7 +12,7 @@
 #top-div{
     padding-top: 5px;
     padding-left: 20px;
-    padding-bottom:80px;
+    /* padding-bottom:px; */
     font-size: 15px;
     color: #A9F09D;
     font-size: 50px;
@@ -21,6 +21,9 @@
     justify-content: space-between; 
   }
 
+#middle-div{
+    padding-top:70px;
+}
   
 #bottom-div{
     font-weight: 900;
@@ -30,14 +33,14 @@
 
 .circle{
     font-size:20px;
-    width:200px;
-    height:30px;
+    width:180px;
+    height:33px;
     border-radius:20px 20px/ 20px 20px;
     border:1px solid black;
     background:#A9F09D;
     position: absolute;
     top:13%;
-    left:11%;
+    left:12%;
 }
 #middle-div{
     font-weight: bold;
