@@ -11,23 +11,15 @@
   
 #top-div{
     padding-top: 5px;
-    padding-right: 250px;
-    padding-left: 180px;
+    padding-left: 20px;
     padding-bottom:80px;
     font-size: 15px;
     color: #A9F09D;
     font-size: 50px;
     font-weight: bold;
     display:flex;
-    justify-content: space-evenly;
-    gap:80px;
+    justify-content: space-between; 
   }
-
-  .imges{
-    display: flex;
-    justify-content: end;
-  }
-
 
   
 #bottom-div{
@@ -37,15 +29,15 @@
 }
 
 .circle{
+    font-size:20px;
     width:200px;
-    height:50;
+    height:30px;
     border-radius:20px 20px/ 20px 20px;
     border:1px solid black;
     background:#A9F09D;
     position: absolute;
-    top:15%;
-    left:12%
-
+    top:13%;
+    left:11%;
 }
 #middle-div{
     font-weight: bold;
