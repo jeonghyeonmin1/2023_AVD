@@ -21,7 +21,7 @@
   }
 
 #middle-div{
-    padding-top:70px;
+    display
 }
   
 #bottom-div{
@@ -30,37 +30,3 @@
 
 }
 
-.circle{
-    font-size:20px;
-    width:180px;
-    height:33px;
-    border-radius:20px 20px/ 20px 20px;
-    border:1px solid black;
-    background:#A9F09D;
-    position: absolute;
-    top:13%;
-    left:12%;
-}
-#middle-div{
-    font-weight: bold;
-}
-
-#bottom-div{
-    text-align: center;
-}
-
-.buttons{
-    width: 150px;
-    height: 40px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #A9F09D;
-    border: black 1px solid;
-    border-radius: 20px;
-}
-  
-.button-flex{
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-evenly;
-}
