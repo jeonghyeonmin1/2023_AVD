@@ -1,4 +1,5 @@
 #super-div{
+    position: relative; 
     width: 400px;
     height: 700px;
     text-align: center;
@@ -10,24 +11,25 @@
 
   
 #top-div{
-    padding-top: 5px;
+    padding-top: 13px;
     padding-left: 20px;
-    font-size: 15px;
+    font-size: 35px;
     color: #A9F09D;
-    font-size: 50px;
     font-weight: bold;
     display:flex;
     justify-content: space-between; 
+    border-bottom: 2px solid black;
+
   }
 
 #middle-div{
-    padding-top:70px;
+    padding-top:40px;
+    font-size : 25px;
 }
   
 #bottom-div{
     font-weight: 900;
     font-size: 30px;
-
 }
 
 .circle{
@@ -37,9 +39,9 @@
     border-radius:20px 20px/ 20px 20px;
     border:1px solid black;
     background:#A9F09D;
-    position: absolute;
-    top:13%;
-    left:12%;
+    position: fixed;
+    top:125px;
+    left:117px;
 }
 #middle-div{
     font-weight: bold;
@@ -50,9 +52,9 @@
 }
 
 .buttons{
-    width: 150px;
-    height: 40px;
-    font-size: 20px;
+    width: 220px;
+    height: 60px;
+    font-size: 30px;
     font-weight: bold;
     background-color: #A9F09D;
     border: black 1px solid;
@@ -60,7 +62,7 @@
 }
   
 .button-flex{
-    margin-top: 40px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-evenly;
 }

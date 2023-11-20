@@ -1,0 +1,13 @@
+#nav-bar{
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid black;
+}
+
+#nav-bar > img {
+    margin-top: 10px;
+    margin-bottom: 13px;
+}

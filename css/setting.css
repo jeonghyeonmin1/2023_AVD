@@ -21,12 +21,12 @@
   }
 
 #middle-div{
-    display
+    display: flex;
+
 }
   
 #bottom-div{
-    font-weight: 900;
+    font-weight: 900px;
     font-size: 30px;
 
 }
-
