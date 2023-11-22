@@ -1,0 +1,98 @@
+#super-div{
+    position: relative; 
+    width: 400px;
+    height: 700px;
+    text-align: center;
+    color: black;
+    background-color: #FFFFFF;
+    border:1px solid black;
+    border-radius: 20px 20px / 20px 20px
+  }
+
+  
+#top-div{
+    padding-top: 13px;
+    padding-left: 20px;
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+    /* display:flex; */
+    /* justify-content: space-between;  */
+    /* border-bottom: 2px solid black; */
+
+  }
+
+#middle-div{
+    position: relative;
+    width: 400px;
+    padding-top:80px;
+    font-size : 25px;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    border-bottom:1px solid black;
+}
+
+.font-size15{
+    margin-top: 5px;
+    font-size: 15px;
+    color: lightgray;
+    margin-bottom: 5px;
+}
+
+.font-green{
+    color: #A9F09D;
+}
+  
+#bottom-div{
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.circle{
+    font-size:20px;
+    width:180px;
+    height:33px;
+    border-radius:20px 20px/ 20px 20px;
+    border:1px solid black;
+    background:#A9F09D;
+    position: fixed;
+    top:125px;
+    left:117px;
+}
+
+
+#bottom-div{
+    text-align: center;
+}
+
+.buttons{
+    width: 220px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #A9F09D;
+    border: black 1px solid;
+    border-radius: 20px;
+}
+  
+.button-flex{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#gun{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 30px;
+    font-size: 20px;
+}
+
+#sentence{
+    position:absolute;
+    top:70;
+    display:flex;
+    justify-content:space-evenly;
+}
