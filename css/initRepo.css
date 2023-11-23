@@ -1,0 +1,20 @@
+#super-div{
+    position: relative; 
+    width: 400px;
+    height: 700px;
+    text-align: center;
+    color: black;
+    background-color:white;
+    border:1px solid black;
+    border-radius: 20px 20px / 20px 20px
+  }
+
+#middle-div{
+    position:fixed;
+    left:110px;
+    top:170px;
+}
+  
+
+
+  
