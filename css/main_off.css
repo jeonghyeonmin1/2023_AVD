@@ -11,19 +11,18 @@
 
 
 #top-div{
+  position:absolute;
+  left:3px;
   padding-top: 13px;
   padding-left: 20px;
-  font-size: 35px;
-  color: #A9F09D;
+  font-size: 20px;
+  color: black;
   font-weight: bold;
   display:flex;
-  justify-content: space-between; 
-  /* border-bottom: 2px solid black; */
-
 }
 
 #middle-div{
-  padding-top:40px;
+  padding-top:110px;
   font-size : 25px;
 }
 
