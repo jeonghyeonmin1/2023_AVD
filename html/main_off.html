@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,30 @@
   <link rel="stylesheet" href="../css/main_off.css">
   <link rel="stylesheet" href="../css/navBar.css">
 </head>
+
 <body>
   <div id="super-div">
     <div id="top-div">
-        <img src="../img/main.png" alt="main" width="30px">
-        <div>메인화면</div>
+      <img src="../img/main.png" alt="main" width="30px">
+      <div>메인화면</div>
     </div>
-    <div id="middle-div">
+    <div class="middle-div">
       <img src="../img/closeeyes.png" alt="눈 감은거" width="230px">
-      <div>현재 분당 깜빡임 수 : n</div>
+      <span>현재 분당 깜빡임 수 : </span>
+      <span class="count"></span>
+    </div>
+    <div class="middle-div active">
+      <img src="../img/eyes.png" alt="눈 뜬거" width="200px">
+      <span>현재 분당 깜빡임 수 : </span>
+      <span class="count"></span>
     </div>
     <div id="bottom-div">
-        <div class="button-flex">
-            <button class="buttons">protecting off</button>
-        </div>
+      <div class="button-flex">
+        <button class="buttons">
+          <span>protecting</span>
+          <span id="state">off</span>
+        </button>
+      </div>
     </div>
     <div id="nav-bar">
       <img src="../img/main1.1.png" alt="그래프" width="50px">
@@ -29,6 +40,15 @@
     </div>
   </div>
   <script src="../js/main.js"></script>
-  
+  <script src="./camvas.js"></script>
+  <script src="./pico.js"></script>
+  <script src="./lploc.js"></script>
+  <script src="./index1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.1/chart.min.js"></script>
+  <script src="./index.js"></script>
+
 </body>
+
 </html>
