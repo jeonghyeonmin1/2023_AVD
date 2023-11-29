@@ -11,6 +11,7 @@
 
   
 #top-div{
+
     padding-top: 13px;
     padding-left: 20px;
     font-size: 25px;
@@ -18,20 +19,21 @@
     font-weight: bold;
     display:flex;
     justify-content: flex-start; 
-    /* border-bottom: 2px solid black; */
 
   }
 
 #middle-div{
     position: relative;
     width: 400px;
-    padding-top:100px;
+    padding-top:80px;
+    padding-bottom:20px;
     font-size : 25px;
     display: flex;
     justify-content: space-evenly;
     font-weight: bold;
     border-bottom:1px solid black;
 }
+
 
 .font-size15{
     margin-top: 5px;
@@ -45,55 +47,36 @@
 }
   
 #bottom-div{
-    font-weight: 900;
-    font-size: 30px;
-}
-
-.circle{
-    font-size:20px;
-    width:180px;
-    height:33px;
-    border-radius:20px 20px/ 20px 20px;
-    border:1px solid black;
-    background:#A9F09D;
-    position: fixed;
-    top:125px;
-    left:117px;
-}
-
-
-#bottom-div{
-    text-align: center;
-}
-
-.buttons{
-    width: 220px;
-    height: 60px;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: #A9F09D;
-    border: black 1px solid;
-    border-radius: 20px;
-}
-  
-.button-flex{
-    margin-top: 70px;
+    position: relative;
+    width: 400px;
+    padding-top:80px;
+    padding-bottom:20px;
+    font-size : 25px;
     display: flex;
     justify-content: space-evenly;
+    font-weight: bold;
+}
+
+#repo{
+    position: absolute;
+    left:0px;
+    top: 10px;
+    margin: 20px;
+    font-size: 20px;
 }
 
 #gun{
-    padding-top:35px;
     position: absolute;
-    left: 0;
-    top: 0;
+    left:0px;
+    top: 20px;
     margin: 30px;
     font-size: 20px;
 }
 
-#sentence{
-    position:absolute;
-    top:70;
-    display:flex;
-    justify-content:space-evenly;
+.font-size1{
+    font-size:15px;
+}
+
+.font-size2{
+    font-size:15px;
 }
