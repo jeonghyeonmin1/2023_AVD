@@ -22,7 +22,7 @@ function button_callback() {
 
 	let do_puploc = function (r, c, s, nperturbs, pixels, nrows, ncols, ldim) { return [-1.0, -1.0]; };
 	// let puplocurl = 'https://drone.nenadmarkus.com/data/blog-stuff/puploc.bin'
-	let puplocurl = "./puploc.bin"
+	let puplocurl = "../puploc.bin"
 	fetch(puplocurl).then(function (response) {
 		response.arrayBuffer().then(function (buffer) {
 			let bytes = new Int8Array(buffer);

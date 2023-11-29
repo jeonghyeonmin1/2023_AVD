@@ -17,13 +17,11 @@
     </div>
     <div class="middle-div">
       <img src="../img/closeeyes.png" alt="눈 감은거" width="230px">
-      <span>현재 분당 깜빡임 수 : </span>
-      <span class="count"></span>
+      <div>현재 분당 깜빡임 수 : <span class="count">0</span></div>
     </div>
     <div class="middle-div active">
       <img src="../img/eyes.png" alt="눈 뜬거" width="200px">
-      <span>현재 분당 깜빡임 수 : </span>
-      <span class="count"></span>
+      <div>현재 분당 깜빡임 수 : <span class="count">0</span></div>
     </div>
     <div id="bottom-div">
       <div class="button-flex">
@@ -39,15 +37,33 @@
       <img src="../img/myset.png" alt="내 설정" width="50px">
     </div>
   </div>
-  <script src="../js/main.js"></script>
-  <script src="./camvas.js"></script>
-  <script src="./pico.js"></script>
-  <script src="./lploc.js"></script>
-  <script src="./index1.js"></script>
+
+  <div id="camvas-div" class="active">
+    <div class="eyes-info">
+      <div>
+        <span id="face-dec"></span>
+      </div>
+      <div id="label"></div>
+      <div class="canvas-div">
+        <canvas id="right-canvas" class="margin-right" width="240" height="194"></canvas>
+        <canvas id="left-canvas" class="margin-right" width="240" height="194"></canvas>
+      </div>
+    </div>
+    <div>
+      <div>count</div>
+      <div id="count_num">0</div>
+    </div>
+    <canvas id="canvas" class="main-canvas" width="640" height="480"></canvas>
+  </div>
+  <!-- <script src="../js/main.js"></script> -->
+  <script src="../js/camvas.js"></script>
+  <script src="../js/pico.js"></script>
+  <script src="../js/lploc.js"></script>
+  <script src="../js/index1.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.1/chart.min.js"></script>
-  <script src="./index.js"></script>
+  <script src="../js/index.js"></script>
 
 </body>
 
