@@ -9,26 +9,33 @@
   border-radius: 20px 20px / 20px 20px
 }
 
+@font-face{
+  font-family:'Jua';
+  src: url("../fonts/BMJUA_ttf.ttf");
+}
 
 #top-div{
   position:absolute;
   left:3px;
   padding-top: 13px;
   padding-left: 20px;
-  font-size: 20px;
+  font-size: 25px;
   color: black;
   font-weight: bold;
   display:flex;
+  font-family:'Jua';
 }
 
 .middle-div{
   padding-top:110px;
   font-size : 25px;
+  font-family:'Jua';
 }
 
 #bottom-div{
   font-weight: 900;
   font-size: 30px;
+  font-family:'Jua';
 }
 
 .circle{
@@ -41,6 +48,7 @@
   position: fixed;
   top:125px;
   left:117px;
+  font-family:'Jua';
 }
 #middle-div{
   font-weight: bold;
@@ -58,6 +66,7 @@
   background-color: #A9F09D;
   border: black 1px solid;
   border-radius: 20px;
+  font-family:'Jua';
 }
 
 .button-flex{

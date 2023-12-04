@@ -9,9 +9,13 @@
     border-radius: 20px 20px / 20px 20px
   }
 
+@font-face{
+    font-family:'Jua';
+    src: url("../fonts/BMJUA_ttf.ttf");
+  }
   
 #top-div{
-
+    font-family:'Jua';
     padding-top: 13px;
     padding-left: 20px;
     font-size: 25px;
@@ -23,6 +27,7 @@
   }
 
 #middle-div{
+    font-family:'Jua';
     position: relative;
     width: 400px;
     padding-top:80px;
@@ -47,6 +52,7 @@
 }
   
 #bottom-div{
+    font-family:'Jua';
     position: relative;
     width: 400px;
     padding-top:80px;
