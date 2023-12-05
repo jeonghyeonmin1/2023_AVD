@@ -1,5 +1,5 @@
 #super-div{
-    position: relative; 
+    position: fixed; 
     width: 400px;
     height: 700px;
     text-align: center;
@@ -15,7 +15,7 @@
   }
 
 #top-div{
-  padding-top:10px;
+  padding-top:30px;
   display:flex;
   justify-content:space-evenly;
 }
@@ -34,8 +34,8 @@
 
 #middle-div{
     font-family:'Jua';
-    position:fixed;
-    left:80px;
+    position:absolute;
+    left:0;
     top:140px;
     color:#A9F09D;
     font-size:30px;
