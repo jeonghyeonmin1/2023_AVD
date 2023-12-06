@@ -34,6 +34,13 @@ middleDiv.forEach((div) => {
       flag = !flag
       flag1 = !flag1
       numCount = 0
+      setInterval(() => {
+        if(Math.floor(numCount/14) <= 10){
+            alert("눈을 깜빡이세요")
+        }
+        numCount = 0
+    }, 1000 * 60);
+    
     }else{
       state.innerHTML = "off"
       flag = !flag
@@ -67,9 +74,6 @@ const loop = async () => {
 const numCountDiv = document.querySelectorAll(".count")
 
 
-setInterval(() => {
-    numCount = 0
-}, 1000 * 60);
 
 const predict = async () => {
     const prediction = await model.predict(leftCanvas);
