@@ -17,6 +17,7 @@ let classFocus = 0
 let flag = false
 let opentime = 0
 let closetime = 0
+let numCount = 0
 
 const middleDiv = document.querySelectorAll('.middle-div')
 const state = document.querySelector('#state')
@@ -32,10 +33,12 @@ middleDiv.forEach((div) => {
       state.innerHTML = "on"
       flag = !flag
       flag1 = !flag1
+      numCount = 0
     }else{
       state.innerHTML = "off"
       flag = !flag
       flag1 = !flag1
+      numCount = 0
     }
     div.classList.add('active')
   })
@@ -62,7 +65,11 @@ const loop = async () => {
 }
 
 const numCountDiv = document.querySelectorAll(".count")
-let numCount = 0
+
+
+setInterval(() => {
+    numCount = 0
+}, 1000 * 60);
 
 const predict = async () => {
     const prediction = await model.predict(leftCanvas);
@@ -70,14 +77,19 @@ const predict = async () => {
         let classPrediction = eyes[i] + " : " + Math.floor(prediction[i].probability * 100) + "%" + "&nbsp;"
         labelContainer.childNodes[i].innerHTML = classPrediction;
     }
-    countdown = Math.floor(numCount/20)
+    let countdown = Math.floor(numCount/14)
+
+    console.log(countdown)
+
+    
     numCountDiv[0].innerHTML = countdown
     numCountDiv[1].innerHTML = countdown
+
 
     if (faceDec.dataset.num === "1" && flag) {
         classFocus++
         uptime1++
-        console.log(closetime, opentime)
+    
         if(opentime > 10){
             eyeClose = eyeClose + prediction[0].probability
         }else if(closetime < 30){
