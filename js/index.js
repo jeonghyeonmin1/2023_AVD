@@ -39,7 +39,7 @@ middleDiv.forEach((div) => {
             alert("눈을 깜빡이세요")
         }
         numCount = 0
-    }, 1000 * 60);
+    }, 1000 * 60 * 30);   //시간 설정하는 부분
     
     }else{
       state.innerHTML = "off"
@@ -81,7 +81,7 @@ const predict = async () => {
         let classPrediction = eyes[i] + " : " + Math.floor(prediction[i].probability * 100) + "%" + "&nbsp;"
         labelContainer.childNodes[i].innerHTML = classPrediction;
     }
-    let countdown = Math.floor(numCount/14)
+    let countdown = Math.floor(numCount/15)
 
     console.log(countdown)
 
