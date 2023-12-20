@@ -24,9 +24,9 @@ const state = document.querySelector('#state')
 
 let flag1 = true
 
-askNotificationPermission();
+askNotificationPermission(); 
 
-function makeNoti() {   
+function makeNoti() {    // 알림을 보내주는 함수
   // 사용자 응답에 따라 단추를 보이거나 숨기도록 설정
   if (Notification.permission === "denied" || Notification.permission === "default") {
     alert("알림이 차단된 상태입니다. 알림 권한을 허용해주세요.");
@@ -43,11 +43,12 @@ function makeNoti() {
     //  window.open('https://www.naver.com/');
     // });
 
-  }
+  } 
 }
 
-function askNotificationPermission() {
-  console.log("권한 묻기");
+function askNotificationPermission() { //알림 주는 부분 시작 
+                                       //알림을 보내주는 함수 
+  console.log("권한 묻기");            
   // 권한을 실제로 요구하는 함수
   function handlePermission(permission) {
     // 사용자의 응답에 관계 없이 크롬이 정보를 저장할 수 있도록 함
@@ -57,10 +58,10 @@ function askNotificationPermission() {
   }
 
   // 브라우저가 알림을 지원하는지 확인
-  if (!("Notification" in window)) {
+  if (!("Notification" in window)) {  
     console.log("이 브라우저는 알림을 지원하지 않습니다.");
   } else {
-    if (checkNotificationPromise()) {
+    if (checkNotificationPromise()) {  //
       Notification.requestPermission().then((permission) => {
         handlePermission(permission);
       });
@@ -72,7 +73,7 @@ function askNotificationPermission() {
   }
 }
 
-function checkNotificationPromise() {
+function checkNotificationPromise() { // 알림 설정을 확인해주는 함수 
   try {
     Notification.requestPermission().then();
   } catch (e) {
@@ -80,9 +81,11 @@ function checkNotificationPromise() {
   }
 
   return true;
-}
+} //알림 주는 부분 
+ 
+//알림 관련 코드 (29~84)
 
-middleDiv.forEach((div) => {
+middleDiv.forEach((div) => { // 클릭 했을 때 눈 사진 바뀌고 + 시간 함수 시작해주는 부분 
   div.addEventListener('click', () => { 
     middleDiv.forEach((div) => {
       div.classList.remove('active')
@@ -109,12 +112,13 @@ middleDiv.forEach((div) => {
     }
     div.classList.add('active')
   })
-})
+}) 
+// (88~115)
 
 
 const eyes = ["eye open", "eye close"]
 
-const init = async () => {
+const init = async () => {  // 처음 시작되는 부분으로 인공지능 모델을 가져오고 무한루프를 돌게 해주는 부분   
     const modelURL = URL + "model.json";
     const metadataURL = URL + "metadata.json";
     model = await tmImage.load(modelURL, metadataURL);
@@ -124,9 +128,9 @@ const init = async () => {
     for (let i = 0; i < maxPredictions; i++) {
         labelContainer.appendChild(document.createElement("span"));
     }
-}
+} //121~131
 
-const loop = async () => {
+const loop = async () => {  // 무한 루프가 돌아가는 함수 
     await predict();
     window.requestAnimationFrame(loop);
 }
@@ -135,12 +139,12 @@ const numCountDiv = document.querySelectorAll(".count")
 
 
 
-const predict = async () => {
-    const prediction = await model.predict(leftCanvas);
+const predict = async () => {  // index1.js 에서 가져온 눈만 보여주는 canvas에서 왼쪽 눈을 보여주는 canvas를 통해서 눈을 떴는지 감았는지 인식해줌  + 퍼센트 알려줌
+    const prediction = await model.predict(leftCanvas); // 
     for (let i = 0; i < maxPredictions; i++) {
         let classPrediction = eyes[i] + " : " + Math.floor(prediction[i].probability * 100) + "%" + "&nbsp;"
         labelContainer.childNodes[i].innerHTML = classPrediction;
-    }
+    } // 여기까지 
     let countdown = Math.floor(numCount/15)
 
     console.log(countdown)
@@ -150,11 +154,11 @@ const predict = async () => {
     numCountDiv[1].innerHTML = countdown
 
 
-    if (faceDec.dataset.num === "1" && flag) {
+    if (faceDec.dataset.num === "1" && flag) { 
         classFocus++
         uptime1++
     
-        if(opentime > 10){
+        if(opentime > 10){ // 깜빡임을 계산해주는 부분 
             eyeClose = eyeClose + prediction[0].probability
         }else if(closetime < 30){
             numCount++
@@ -162,7 +166,7 @@ const predict = async () => {
         }
         if (closetime > 30) {
             eyeClose = eyeClose + prediction[1].probability
-        }
+        } // 여기까지 
     }
 
     if(faceDec.dataset.num === "0"){
